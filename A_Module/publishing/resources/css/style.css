@@ -1,0 +1,150 @@
+html::-webkit-scrollbar{
+    display: none;
+}
+
+.sub-nav{
+    height: 0px;
+    left: 0;
+    top: 100%;
+    opacity: 0.9;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.nav-item:hover .sub-nav {
+    height: 300px;
+}
+
+.sub-nav ul {
+    list-style: none;
+}
+
+.sub-nav li {
+    vertical-align: top;
+}
+
+.sub-nav .nav-link {
+    color: darkgray !important;
+}
+
+.sub-nav .nav-link:hover {
+    color: gray !important;
+}
+
+.sub-sub-nav .nav-link {
+    color: gray !important;
+}
+
+.sub-sub-nav .nav-link:hover {
+    color: dimgray !important;
+}
+
+.sub-nav div > ul > li {
+    display: inline-block;
+}
+
+.sub-sub-nav a {
+    padding: 5px;
+}
+
+tr {
+    transition: 0.3s;
+}
+
+.list-group-item{
+    transition: 0.3s;
+}
+
+.list-group-item:hover {
+    background: rgb(240, 240, 240);
+}
+
+.time-line {
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: auto;
+    height: 200px;
+}
+
+.node {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 15px;
+    margin-left: 15px;
+    text-align: center;
+    height: 100%;
+}
+
+.node-title {
+    font-size: 110%;
+}
+
+.node-title::after {
+    position: absolute;
+    content: '';
+    width: 200%;
+    height: 1px;
+    left: 0;
+    top: 38px;
+    background: royalblue;
+}
+
+.node-img {
+    position: relative;
+    width: 15px;
+    height: 15px;
+    border: solid royalblue;
+    border-radius: 50%;
+    background: white;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.node:hover .node-img {
+    background: royalblue;
+}
+
+.node-content {
+    height: 15%;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.node:hover .node-content {
+    height: 100%;
+}
+
+.node-content p {
+    margin: 0;
+}
+
+.node-expend {
+    height: 5px;
+}
+
+.banner {
+    white-space: nowrap;
+}
+
+.banner .carousel {
+    display: inline-block;
+}
+
+footer p{
+    margin: 0;
+}
+
+footer a {
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: gray;
+}
+
+footer a:hover {
+    color: dimgray;
+    text-decoration: none;
+}
